@@ -150,7 +150,7 @@
       </OptimizeReferences>
       <DataExecutionPrevention>false</DataExecutionPrevention>
       <LinkTimeCodeGeneration />
-      <ProgramDatabaseFile>.\Release\WillThisCrash.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -172,7 +172,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <Optimization>Disabled</Optimization>
+      <Optimization>MaxSpeed</Optimization>
       <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
     <Link>
